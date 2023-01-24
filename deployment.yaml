@@ -20,7 +20,7 @@ spec:
   selector:
     matchLabels:
       app: toapp
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: toapp
-        image: movista/toapp:1.0.1
+        image: movista/toapp:1.0.3
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
