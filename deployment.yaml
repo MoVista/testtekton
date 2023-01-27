@@ -22,7 +22,7 @@ spec:
   - protocol: "TCP"
     port: 8501
     targetPort: 8501
-    protocol: "https"
+    protocol: "http"
     port: 80
     targetPort: 8501
   type: LoadBalancer
