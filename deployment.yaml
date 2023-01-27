@@ -7,7 +7,7 @@ spec:
     app: toapp
   ports:
   - protocol: "TCP"
-    port: 8501
+    port: 80
     targetPort: 8501
   type: LoadBalancer
 
