@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: toapp-service-prod
+  name: toapp-service
 spec:
   selector:
     app: toapp
