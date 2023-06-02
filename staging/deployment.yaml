@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: toapp
-        image: movista/toapp:1.0.11
+        image: movista/toapp:D.1.2.3
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
