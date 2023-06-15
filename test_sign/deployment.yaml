@@ -4,7 +4,7 @@ metadata:
   name: app-service
 spec:
   selector:
-    app: toapp
+    app: app
   ports:
   - protocol: "TCP"
     port: 80
@@ -19,15 +19,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: toapp
+      app: app
   replicas:  
   template:
     metadata:
       labels:
-        app: toapp
+        app: app
     spec:
       containers:
-      - name: toapp
+      - name: app
         image: movista/signature:latest
         imagePullPolicy: Always
         ports:
