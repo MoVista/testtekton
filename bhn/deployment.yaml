@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: toapp-service
+  name: app-service
 spec:
   selector:
-    app: toapp
+    app: app
   ports:
   - protocol: "TCP"
     port: 80
@@ -15,20 +15,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: toapp
+  name: app
 spec:
   selector:
     matchLabels:
-      app: toapp
+      app: app
   replicas:  
   template:
     metadata:
       labels:
-        app: toapp
+        app: app
     spec:
       containers:
-      - name: toapp
-        image: movista/signature:1.1.2
+      - name: app
+        image: movista/chucklatham:0.0.3 
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
