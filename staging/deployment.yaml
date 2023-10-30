@@ -29,7 +29,7 @@ spec:
       containers:
       - name: toapp
         #image: movista/toapp:6.6.6
-        image:movista/randaprd:10.30.23
+        image: movista/randaprd:10.30.23
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
