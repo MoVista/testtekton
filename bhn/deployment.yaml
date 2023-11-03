@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: movista/bhn:11.03.23
+        image: movista/bhn:11.03.23.v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
