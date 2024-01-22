@@ -31,7 +31,8 @@ spec:
         #image: movista/toapp:6.6.6
         #image: movista/randaprd:10.30.23
         #image: movista/randaprd:11.20.23.vs
-        image: movista/randaprd:11.20.23.vs1
+        #image: movista/randaprd:11.20.23.vs1
+        image: movista/randaprd:01.22.24.vs2
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
