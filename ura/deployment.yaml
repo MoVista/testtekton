@@ -29,7 +29,7 @@ spec:
       containers:
       - name: toapp
         #image: movista/ura:11.06.23
-        image: movista/ura:05.01.24 may1/24
+        image: movista/ura:05.01.24 #may1/24
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
